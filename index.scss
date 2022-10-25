@@ -871,6 +871,10 @@ body {
             width: 95%;
           }
 
+          @media (max-width: 400px) {
+            display: none;
+          }
+
           .about__text {
             padding: 50px;
             -webkit-box-flex: 1;
@@ -962,6 +966,11 @@ body {
             -ms-flex-align: center;
             align-items: center;
 
+            @media (max-width: 500px) {
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+
             img {
               width: 90px;
               height: 80px;
@@ -974,6 +983,12 @@ body {
               height: 115px;
               margin-left: 20px;
               margin-bottom: 70px;
+
+              @media (max-width: 400px) {
+                text-align: center;
+                margin-left: 0;
+                margin-bottom: 0;
+              }
 
               h5 {
                 text-transform: uppercase;
@@ -1321,6 +1336,7 @@ body {
 
         @media (max-width: 900px) {
           margin-top: 10px;
+          width: 90%;
         }
 
         @include mobile {

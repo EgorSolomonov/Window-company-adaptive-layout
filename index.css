@@ -661,6 +661,11 @@ body main .about .about__wrapper .about__pic-wrapper {
     width: 95%;
   }
 }
+@media (max-width: 400px) {
+  body main .about .about__wrapper .about__pic-wrapper {
+    display: none;
+  }
+}
 body main .about .about__wrapper .about__pic-wrapper .about__text {
   padding: 50px;
   flex: 1;
@@ -719,7 +724,7 @@ body main .about .about__wrapper .about__pic-wrapper .about__pic img {
 @media (max-width: 1070px) {
   body main .about .about__wrapper .about__pic-wrapper .about__pic img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 body main .about .about__wrapper .about__items {
@@ -733,6 +738,12 @@ body main .about .about__wrapper .about__items .about__item {
   display: flex;
   align-items: center;
 }
+@media (max-width: 500px) {
+  body main .about .about__wrapper .about__items .about__item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 body main .about .about__wrapper .about__items .about__item img {
   width: 90px;
   height: 80px;
@@ -743,6 +754,13 @@ body main .about .about__wrapper .about__items .about__item .about__item-text {
   height: 115px;
   margin-left: 20px;
   margin-bottom: 70px;
+}
+@media (max-width: 400px) {
+  body main .about .about__wrapper .about__items .about__item .about__item-text {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 body main .about .about__wrapper .about__items .about__item .about__item-text h5 {
   text-transform: uppercase;
@@ -819,7 +837,7 @@ body main .portfolio-wrapper .portfolio .portfolio__gallery img {
   height: 215px;
   border-radius: 3px;
   -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
 }
 @media (max-width: 1070px) {
   body main .portfolio-wrapper .portfolio .portfolio__gallery img:last-child {
@@ -997,6 +1015,7 @@ body .footer-wrapper footer .confidential {
 @media (max-width: 900px) {
   body .footer-wrapper footer .confidential {
     margin-top: 10px;
+    width: 90%;
   }
 }
 @media (max-width: 620px) {
